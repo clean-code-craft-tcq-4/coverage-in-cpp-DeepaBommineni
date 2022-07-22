@@ -35,3 +35,7 @@ TEST_CASE("Check Alert and message of To Email") {
 	checkAndAlert(TO_EMAIL, batteryChar, 40) ;
 	checkAndAlert(TO_EMAIL, batteryChar, 10) ;
 }
+TEST_CASE("Check alert for default input") {
+	BatteryCharacter batteryChar {PASSIVE_COOLING,"ELBattery"};
+	checkAndAlert(TO_DEFAULT, batteryChar, -5);
+}

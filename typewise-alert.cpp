@@ -45,6 +45,8 @@ void checkAndAlert(
     case TO_EMAIL:
       sendToEmail(breachType);
       break;
+    default:
+      break;
   }
 }
 
