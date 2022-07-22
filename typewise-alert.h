@@ -1,5 +1,9 @@
 #pragma once
 
+#include <stdio.h>
+#include <iostream>
+#include <sstream>
+
 typedef enum {
   PASSIVE_COOLING,
   HI_ACTIVE_COOLING,
@@ -17,7 +21,8 @@ BreachType classifyTemperatureBreach(CoolingType coolingType, double temperature
 
 typedef enum {
   TO_CONTROLLER,
-  TO_EMAIL
+  TO_EMAIL,
+  TO_DEFAULT
 } AlertTarget;
 
 typedef struct {
